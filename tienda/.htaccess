@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+#Pasar 1 variable
+#RewriteRule ^producto/([a-zA-Z0-9-]+)$ productos.php?id=$1
+
+#Pasar 2 variables
+RewriteRule ^producto/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)$ productos.php?id=$1&nombre=$2
